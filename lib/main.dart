@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Jayking',
-      theme: ThemeData(
+      theme: ThemeData(fontFamily: 'Montserrat',
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
@@ -78,7 +78,8 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: Column(
+        child: ListView(
+          padding: EdgeInsets.only(left: 10, right: 10),
           // Column is also a layout widget. It takes a list of children and
           // arranges them vertically. By default, it sizes itself to fit its
           // children horizontally, and tries to be as tall as its parent.
@@ -93,23 +94,23 @@ class _MyHomePageState extends State<MyHomePage> {
           // center the children vertically; the main axis here is the vertical
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset("assets/images/funmi.jpg"),
-            const Text(
-            'Who am I'
-            'My name is Jesuloba David Fademi, 3rd child out of a family of 3 Sons. I hail from a big town called Ilesa which is more popular than its Capital'
-            'Growing up as a boy child comes with a lot of challenges which involves hardcore playing, footballing and being notorious'
-            'But I am fortunately raised by loving parents which happened to be Priest in the Anglican Communion'
-            'They ensured we perform activities like private learning through the use of the computer and also how to operate a computer'
-            'I find myself trying to make things out substances around when I was kid and it is still a part of me today'
-            'I remember the first time my Primary school teacher explained how to plant maize, when i got back home I experimented it.'
-            'I happened to carryout on a large scale at the back of my house, it was fruitful and we had a small harvest!.'
-            'Maybe Agriculture was my calling, lol!.'
-                'I am happy for everyone that has imparted my life in a way or the other. They also have a part to play in the growing and grooming of a young man like me!.'
-                'Yours sincerely'
-                '- Jesuloba!!!',
-                style: TextStyle(fontSize: 16, fontFamily: 'Roboto', fontWeight: FontWeight.normal),
+            Image.asset("assets/images/Loba.JPG",fit: BoxFit.contain,),
+                        const Text(
+            'Who am I?\n'
+            'My name is Jesuloba David Fademi, 3rd child out of a family of 3 Sons.''\nI hail from a big town called Ilesa which is more popular than its Capital'
+            'Growing up as a boy child comes with a lot of challenges which involves hardcore playing, footballing and being notorious.'
+            '\nBut I am fortunately raised by loving parents which happened to be Priest in the Anglican Communion'
+            '\nThey ensured we perform activities like private learning through the use of the computer and also how to operate a computer'
+            '\nI find myself trying to make things out substances around when I was kid and it is still a part of me today'
+            '\nI remember the first time my Primary school teacher explained how to plant maize, when i got back home I experimented it.'
+            '\nI happened to carryout on a large scale at the back of my house, it was fruitful and we had a small harvest!.'
+            '\nMaybe Agriculture was my calling, lol!.'
+                '\nI am happy for everyone that has imparted my life in a way or the other. They also have a part to play in the growing and grooming of a young man like me!.'
+                '\n'
+                '\nYours sincerely'
+                '\n- Jesuloba!!!',
+                style: TextStyle(fontSize: 16, fontFamily: 'Montserrat', fontWeight: FontWeight.normal),
             ),
             const Text('',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.normal)
