@@ -61,6 +61,7 @@ flutter:
   assets:
      - assets/images/funmi.jpg
      - assets/images/Loba.JPG
+     - assets/images/Bell Icon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -79,6 +80,13 @@ flutter:
          - asset: assets/fonts/Montserrat-BlackItalic.ttf
          - asset: assets/fonts/Montserrat-Bold.ttf
            style: italic
+
+     - family: OpenSans
+       fonts:
+        - asset: assets/fonts/OpenSans-Bold.ttf
+        - asset: assets/fonts/OpenSans-Light.ttf
+          style: italic
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
